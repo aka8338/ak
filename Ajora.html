@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page-1</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li>  <a href="home.html"> Home</a></li>
+            <li> <a href="kembata.html">Kembata</a></li>
+            <li>            <a href="hambarich.html">Hambaricho</a> </li>
+             <li><a href="ajora.html"> Ajora</a></li>
+        
+    </ul>
+    </nav>
+    
+    <header>
+        <h1>Ajora Waterfall - Majestic Beauty</h1>
+    </header>
+
+    <section class="section1">
+        <h2>Experience the Splendor of Ajora Waterfall</h2>
+        <p>
+            Ajora Waterfall, a breathtaking natural wonder, invites you to witness its majestic beauty. Scroll through the images below to catch a glimpse of the cascading waters and the enchanting surroundings that make Ajora a must-visit destination.
+        </p>
+
+        <!-- 6 images displayed 3 wide and 2 down -->
+        <div class="image-grid">
+            <figure>
+                <img src="top.jpg" alt="Ajora Waterfall - Image 1">
+                <figcaption>View from the Top</figcaption>
+            </figure>
+
+            <figure>
+                <img src="sunlit.jpg" alt="Ajora Waterfall - Image 2">
+                <figcaption>Sunlit Waters</figcaption>
+            </figure>
+
+            <figure>
+                <img src="nature.jpg" alt="Ajora Waterfall - Image 3">
+                <figcaption>Surrounded by Nature</figcaption>
+            </figure>
+
+            <figure>
+                <img src="nice.jpg" alt="Ajora Waterfall - Image 4">
+                <figcaption>Flowing Serenity</figcaption>
+            </figure>
+
+            <figure>
+                <img src="fall.jpg" alt="Ajora Waterfall - Image 5">
+                <figcaption>Reflections in the Pool</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images.jpg" alt="Ajora Waterfall - Image 6">
+                <figcaption>Hidden Beauty</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <script>
+        // Open image source in a new window on click
+        document.querySelectorAll('.image-grid img').forEach(img => {
+            img.addEventListener('click', () => {
+                window.open(img.src, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
